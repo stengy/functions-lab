@@ -7,8 +7,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a,b){ //eslint-disable-line
+  var sumTotal = a + b;
+  var sumReply = [sumTotal, 'The sum of ' + a + ' and' + b + ' is ' + sumTotal];
+
+  return sumReply;
 
 }
+
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -23,6 +28,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
+  var product = a * b;
+  var multiReply = [product, 'The product of ' + a + ' and ' + b + ' is ' + product];
+
+  return multiReply;
 
 }
 
@@ -41,6 +50,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var total = a + b + c;
+  var product = a * b * c;
+  var sumMultiResult = [total, product, a + ' and ' + b + ' and ' + c + ' sum to ' + total, 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product];
+
+  return sumMultiResult;
 
 }
 
@@ -60,6 +74,10 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
+  var addTheseTotal = testArray[0] + testArray[1] + testArray [2];
+  var resultOfThese = [addTheseTotal, '2,3,4 was passed in as an array of numbers, and ' + addTheseTotal + ' is their sum.'];
+
+  return resultOfThese;
 
 }
 
@@ -78,6 +96,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
+  var multiplyThese = testArray[0] * testArray[1] * testArray[2];
+  var productOfThese = [multiplyThese, '2,3,4 have a product of ' + multiplyThese];
+
+  return productOfThese;
 
 }
 
